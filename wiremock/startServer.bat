@@ -1,0 +1,1 @@
+java -jar wiremock-standalone-3.9.2.jar --port 8082
