@@ -14,9 +14,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ReceiveValidateCpfConsumer {
 
-    private UpdateCustomerInputPort updateCustomerInputPort;
+    private final UpdateCustomerInputPort updateCustomerInputPort;
 
-    private CustomerMessageMapper customerMessageMapper;
+    private final CustomerMessageMapper customerMessageMapper;
 
     @KafkaListener(topics ="tp-cpf-validated", groupId="arantes")
     public void receive(CustomerMessage customerMessage) {

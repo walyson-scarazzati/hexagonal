@@ -8,7 +8,7 @@ import com.scarazzati.hexagonal.application.core.usercase.DeleteCustomerByIdUseC
 import com.scarazzati.hexagonal.application.core.usercase.FindCustomerByIdUseCase;
 
 @Configuration
-public class DeleteCustomerConfig {
+public class DeleteCustomerByIdConfig {
 
     @Bean
     public DeleteCustomerByIdUseCase deleteCustomerByIdUseCase(FindCustomerByIdUseCase findCustomerByIdUseCase, DeleteCustomerByIdAdapter deleteCustomerByIdAdapter) {

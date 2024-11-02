@@ -15,8 +15,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class FindCustomerByIdAdapter implements FindCustomerByIdOutputPort{
 
-    private CustomerRepository customerRepository;
-    private CustomerEntityMapper customerEntityMapper;
+    private final CustomerRepository customerRepository;
+    private final CustomerEntityMapper customerEntityMapper;
 
     @Override
     public Optional<Customer> find(String id) {

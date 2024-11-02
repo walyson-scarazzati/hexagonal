@@ -13,9 +13,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class InsertCustomerAdapter implements InsertCustomerOutputPort {
 
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
     
-    private CustomerEntityMapper customerEntityMapper;
+    private final CustomerEntityMapper customerEntityMapper;
 
     @Override
     public void insert(Customer customer) {

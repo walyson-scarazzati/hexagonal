@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SendCpfValidationAdapter implements SendCpfForValidationOutputPort{
 
-    private KafkaTemplate kafkaTemplate;
+    private final KafkaTemplate kafkaTemplate;
 
     @Override
     public void send(String cpf) {

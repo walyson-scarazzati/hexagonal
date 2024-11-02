@@ -6,7 +6,7 @@ import com.scarazzati.hexagonal.adapters.out.client.response.AddressResponse;
 import com.scarazzati.hexagonal.application.core.domain.Address;
 
 @Mapper(componentModel = "spring")
-public interface AddressReponseMapper {
+public interface AddressResponseMapper {
 
-    Address toAdress(AddressResponse addressResponse);
+    Address toAddress(AddressResponse addressResponse);
 }

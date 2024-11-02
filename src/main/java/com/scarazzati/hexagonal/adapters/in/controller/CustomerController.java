@@ -29,15 +29,15 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CustomerController {
     
-    private InsertCustomerInputPort insertCustomerInputPort;
+    private final InsertCustomerInputPort insertCustomerInputPort;
 
-    private FindCustomerByIdInputPort findCustomerByIdInputPort;
+    private final FindCustomerByIdInputPort findCustomerByIdInputPort;
     
-    private UpdateCustomerInputPort updateCustomerInputPort;
+    private final UpdateCustomerInputPort updateCustomerInputPort;
 
-    private DeleteCustomerByIdInputPort deleteCustomerByIdInputPort;
+    private final DeleteCustomerByIdInputPort deleteCustomerByIdInputPort;
 
-    private CustomerMapper customerMapper;
+    private final CustomerMapper customerMapper;
 
     @PostMapping
     public ResponseEntity<Void> insert(@Valid @RequestBody CustomerRequest customerRequest){
@@ -46,7 +46,7 @@ public class CustomerController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public ResponseEntity<CustomerResponse> findById(@PathVariable final String id){
         var customer = findCustomerByIdInputPort.find(id);
         var customerResponse = customerMapper.toCustomerResponse(customer);
