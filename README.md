@@ -1,9 +1,7 @@
 # HexagonalArchitecture
-Arquitetura Hexagonal/Ports and Adapters NA PRÁTICA
+Course: Arquitetura Hexagonal/Ports and Adapters NA PRÁTICA  https://www.udemy.com/course/arquitetura-hexagonal-ou-ports-and-adapters-na-pratica/
 
-Aprenda na prática como aplicar a arquitetura hexagonal em microsserviços utilizando Java, Spring Boot, MongoDB e Kafka
-
-https://www.udemy.com/course/arquitetura-hexagonal-ou-ports-and-adapters-na-pratica/
+Course: Learn hands-on how to apply hexagonal architecture in microservices using Java, Spring Boot, MongoDB, and Kafka.
 
 <h1>Technologies</h1>
 <ul>
