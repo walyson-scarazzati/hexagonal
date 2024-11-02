@@ -95,7 +95,7 @@ public class NamingConventionTest {
             .that()
             .haveNameMatching(".*UseCase")
             .should()
-            .resideInAPackage("..application.core.usercase")
+            .resideInAPackage("..application.core.usecase")
             .as("Usecase classes should reside inside usecase package in core package");
 
     @ArchTest
@@ -197,7 +197,7 @@ public class NamingConventionTest {
     @ArchTest
     public static final ArchRule should_be_suffixed_usecase = classes()
             .that()
-            .resideInAPackage("..usercase")
+            .resideInAPackage("..usecase")
             .should()
             .haveSimpleNameEndingWith("UseCase");
 

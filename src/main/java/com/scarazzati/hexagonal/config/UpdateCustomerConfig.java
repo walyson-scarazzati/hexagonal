@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Configuration;
 
 import com.scarazzati.hexagonal.adapters.out.FindAddressByZipCodeAdapter;
 import com.scarazzati.hexagonal.adapters.out.UpdateCustomerAdapter;
-import com.scarazzati.hexagonal.application.core.usercase.FindCustomerByIdUseCase;
-import com.scarazzati.hexagonal.application.core.usercase.UpdateCustomerUseCase;
+import com.scarazzati.hexagonal.application.core.usecase.FindCustomerByIdUseCase;
+import com.scarazzati.hexagonal.application.core.usecase.UpdateCustomerUseCase;
 
 @Configuration
 public class UpdateCustomerConfig {

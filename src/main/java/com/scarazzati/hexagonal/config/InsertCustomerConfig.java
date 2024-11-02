@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.scarazzati.hexagonal.adapters.out.FindAddressByZipCodeAdapter;
 import com.scarazzati.hexagonal.adapters.out.InsertCustomerAdapter;
 import com.scarazzati.hexagonal.adapters.out.SendCpfValidationAdapter;
-import com.scarazzati.hexagonal.application.core.usercase.InsertCustomerUseCase;
+import com.scarazzati.hexagonal.application.core.usecase.InsertCustomerUseCase;
 
 @Configuration
 public class InsertCustomerConfig {

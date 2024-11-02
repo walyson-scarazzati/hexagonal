@@ -1,4 +1,4 @@
-package com.scarazzati.hexagonal.application.core.usercase;
+package com.scarazzati.hexagonal.application.core.usecase;
 
 import com.scarazzati.hexagonal.application.ports.in.DeleteCustomerByIdInputPort;
 import com.scarazzati.hexagonal.application.ports.in.FindCustomerByIdInputPort;

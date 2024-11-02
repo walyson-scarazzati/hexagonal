@@ -14,7 +14,7 @@ public class LayeredArchitectureTest {
             .consideringAllDependencies()
             .layer("AdaptersIn").definedBy("..adapters.in..")
             .layer("AdaptersOut").definedBy("..adapters.out..")
-            .layer("UseCase").definedBy("..application.core.usercase..")
+            .layer("UseCase").definedBy("..application.core.usecase..")
             .layer("PortsIn").definedBy("..application.ports.in..")
             .layer("PortsOut").definedBy("..application.ports.out..")
             .layer("Config").definedBy("..config..")
