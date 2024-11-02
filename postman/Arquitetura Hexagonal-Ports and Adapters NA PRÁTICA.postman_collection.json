@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "aa9f7a3f-5c2d-44b1-9f21-74a85b773c2d",
+		"name": "Arquitetura Hexagonal/Ports and Adapters NA PRÁTICA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19833026"
+	},
+	"item": [
+		{
+			"name": "Address by zipCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/addresses/38400000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"addresses",
+						"38400000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Fernando\",\r\n    \"zipCode\": \"38400000\",\r\n    \"cpf\": \"78945612378\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Customer By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/customers/6725fb221e0ad002054c39b6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"6725fb221e0ad002054c39b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/customers/6725fb871e0ad002054c39b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"6725fb871e0ad002054c39b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Walyson\",\r\n    \"zipCode\": \"38400001\",\r\n    \"cpf\": \"40233021809\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/customers/6725fb221e0ad002054c39b6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"6725fb221e0ad002054c39b6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
